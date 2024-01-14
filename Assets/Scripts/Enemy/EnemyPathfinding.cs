@@ -123,7 +123,7 @@ public class EnemyPathfinding : MonoBehaviour
             reachedEndOfPath = false;
         }
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized; // Direction towards teh target
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized; // Direction towards the target
         Vector2 force = direction * speed * Time.deltaTime; // Force that needs to be applied to move the enemy towards that direction
 
         rb.AddForce(force); // Adds force, moves teh enemy with the force.
